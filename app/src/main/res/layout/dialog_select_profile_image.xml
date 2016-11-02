@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_dialog_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/medium_margin"
+    android:paddingTop="@dimen/medium_margin">
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_select_camera"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xx_large_margin"
+        android:layout_marginRight="@dimen/large_margin"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/medium_margin">
+
+        <ImageView
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:tint="@color/colorAccent"
+            android:src="@drawable/ic_color_camera" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camera"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/normal_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_select_gallery"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:layout_marginRight="@dimen/xx_large_margin"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/medium_margin">
+
+        <ImageView
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:tint="@color/colorAccent"
+            android:src="@drawable/ic_gallery" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gallery"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/normal_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

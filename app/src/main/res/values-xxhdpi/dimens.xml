@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- XXHDPI -->
+
+
+    <!-- text -->
+    <dimen name="textsize8">12sp</dimen>
+    <dimen name="small_text_size">14sp</dimen>
+    <dimen name="textsize12">13sp</dimen>
+    <dimen name="normal_text_size">18sp</dimen>
+    <dimen name="textsize16">16sp</dimen>
+    <dimen name="large_textsize">24sp</dimen>
+    <dimen name="textsize20">20sp</dimen>
+    <dimen name="textsize22">25sp</dimen>
+    <dimen name="textsize30">30sp</dimen>
+
+    <!-- margin -->
+    <dimen name="small_margin">10dp</dimen>
+    <dimen name="medium_margin">12dp</dimen>
+    <dimen name="large_margin">20dp</dimen>
+    <dimen name="x_large_margin">22dp</dimen>
+    <dimen name="xx_large_margin">25dp</dimen>
+    <dimen name="margin30">35dp</dimen>
+    <dimen name="margin35">40dp</dimen>
+    <dimen name="margin50">55dp</dimen>
+    <dimen name="margin80">90dp</dimen>
+    <dimen name="margin60">70dp</dimen>
+    <dimen name="margin70">80dp</dimen>
+    <dimen name="server_column_size">100dp</dimen>
+    <dimen name="margin220">280dp</dimen>
+
+    <!-- Button height -->
+    <dimen name="button_height">45dp</dimen>
+    <dimen name="place_image">35dp</dimen>
+
+    <!-- Profile Image -->
+    <dimen name="profile_image">110dp</dimen>
+
+    <!-- Login Logo -->
+    <dimen name="logo_width">260dp</dimen>
+
+    <!-- Drawer -->
+    <dimen name="drawer_width">220dp</dimen>
+
+</resources>

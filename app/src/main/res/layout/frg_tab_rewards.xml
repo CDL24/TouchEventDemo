@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_drag_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            android:layout_weight="0.35">
+
+            <!--<com.reseeit.views.RevealColorView-->
+                <!--android:id="@+id/revealColorView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" />-->
+
+            <ImageView
+                android:id="@+id/img_points"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/x_large_margin"
+                android:layout_marginLeft="@dimen/margin30"
+                android:layout_marginRight="@dimen/margin30"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:scaleType="fitXY"
+                android:src="@drawable/image" />
+
+            <TextView
+                android:id="@+id/tv_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="bottom"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:text="0 points to redeem reward"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/small_text_size"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_margin"
+                android:background="#33000000" />
+
+            <View
+                android:id="@+id/viewProgress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_margin"
+                android:background="#77000000" />
+        </FrameLayout>
+
+        <!--<android.support.v4.widget.SwipeRefreshLayout-->
+            <!--android:id="@+id/swipe_container"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_weight="0.65">-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/rv_rewards_profile"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_weight="0.65" />-->
+        <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_container"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_rewards_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/margin80"
+    android:paddingLeft="@dimen/xx_large_margin"
+    android:paddingRight="@dimen/xx_large_margin"
+    android:paddingTop="@dimen/margin80"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_coupon_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_redeem"
+            android:background="@android:color/white"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:id="@+id/ll_redeem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/btn_redeem"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:layout_marginLeft="@dimen/margin35"
+                android:layout_marginRight="@dimen/margin35"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@drawable/btn_redeem_back"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="Tap to redeem"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsize16"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

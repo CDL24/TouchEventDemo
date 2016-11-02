@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/videoSurfaceContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_interaction"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/drawer_width"
+            android:src="@drawable/image"
+            android:visibility="gone" />
+
+        <!--<com.android.tedcoder.wkvideoplayer.view.SuperVideoPlayer-->
+        <!--android:id="@+id/video_player"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:visibility="gone" />-->
+        <!--<VideoView-->
+        <!--android:id="@+id/video_view_interaction"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center" />-->
+
+        <WebView
+            android:id="@+id/web_view_interaction"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/drawer_width"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

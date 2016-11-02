@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frg_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_toolbar"
+        android:background="#33333333">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!--  <com.reseeit.views.InkPageIndicator
+              android:id="@+id/indicator"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              app:animationDuration="320"
+              app:currentPageIndicatorColor="@android:color/black"
+              app:dotDiameter="8dp"
+              app:dotGap="8dp"
+              app:pageIndicatorColor="@android:color/darker_gray" /> -->
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="bottom|center_horizontal"
+            android:checkedButton="@+id/radioBtnScreen1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBtnScreen1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/small_text_size"
+                android:layout_margin="5dp"
+                android:background="@drawable/rb_background"
+                android:button="@null"
+                android:clickable="false"/>
+
+            <RadioButton
+                android:id="@+id/radioBtnScreen2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/small_text_size"
+                android:layout_margin="5dp"
+                android:background="@drawable/rb_background"
+                android:button="@null"
+                android:clickable="false"/>
+
+            <RadioButton
+                android:id="@+id/radioBtnScreen3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/small_text_size"
+                android:layout_margin="5dp"
+                android:background="@drawable/rb_background"
+                android:button="@null"
+                android:clickable="false"/>
+
+            <RadioButton
+                android:id="@+id/radioBtnScreen4"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/small_text_size"
+                android:layout_margin="5dp"
+                android:background="@drawable/rb_background"
+                android:button="@null"
+                android:clickable="false"/>
+
+            <RadioButton
+                android:id="@+id/radioBtnScreen5"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/small_text_size"
+                android:layout_margin="5dp"
+                android:background="@drawable/rb_background"
+                android:button="@null"
+                android:clickable="false"/>
+
+            <RadioButton
+                android:id="@+id/radioBtnScreen6"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_margin="0dp"
+                android:background="@drawable/rb_background"
+                android:button="@null"
+                android:clickable="false"/>
+        </RadioGroup>
+    </FrameLayout>
+
+</RelativeLayout>

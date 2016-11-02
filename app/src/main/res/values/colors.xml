@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#5643ad</color>
+    <color name="colorPrimaryDark">#5643ad</color> <!-- top header -->
+    <color name="colorAccent">#5644ad</color> <!-- action bar -->
+    <color name="colorControlNormal">#5644ad</color>
+    <color name="colorControlActivated">#5644ad</color>
+    <color name="colorSwitchThumbNormal">#5644ad</color>
+    <color name="orange">#5643ad</color> <!-- 3c69b2 -->
+    <color name="dark_orange">#fff15141</color>
+    <color name="new_orange">#e24337</color>
+
+
+    <array name="progress_colors">
+        <item>#FF3F8AF8</item>
+        <item>#FFD8433C</item>
+        <item>#FFF2AF3A</item>
+        <item>#FF279B5E</item>
+    </array>
+    <array name="in_colors">
+        <item>#FFB5D4FF</item>
+        <item>#FFDEEAFC</item>
+        <item>#FFFAFFFE</item>
+    </array>
+
+    <color name="btn_normal">#003f62</color>
+    <color name="btn_pressed">#99003f62</color>
+    <color name="btn_disable">#99446070</color>
+    <color name="rb_checked">#FF4CAF50</color>
+    <color name="rb_unchecked">#FF6D6D6D</color>
+    <color name="rb_disable">#FFB0B0B0</color>
+    <color name="tpi_checked">#FFFFFFFF</color>
+    <color name="tpi_unchecked">#99FFFFFF</color>
+    <color name="et_divider_focused">@color/colorControlActivated</color>
+    <color name="et_divider_not_focused">#FF6D6D6D</color>
+    <color name="et_divider_disable">#FFC1C1C1</color>
+
+    <!-- reseeit colors -->
+    <color name="text_yellow">#f9c20a</color>
+    <color name="transparent">#00c90c0c</color>
+
+</resources>
